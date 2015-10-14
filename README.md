@@ -1,14 +1,26 @@
-iOS Coding Guidelines & Good Practices
---------------------------------------
 
- 1. [Naming guidelines](#naming-guidelines)
- 2. [Stylistics Aspects](#stylistics-aspects)
- 3. [General Guidelines](#general-guidelines)
+**iOS Coding Guidelines & Good Practices**
+
+[TOC]
 
 ----------
-
-
 #Naming Guidelines
-The following set of guidelines is for reference during coding and code review phases. Examples are given under most guidelines along with notes. Since this document could evolve, please ensure that you are referring to the latest version available in company.
+## Prefix class name with 3 characters
+Always prefix the class name with two or max of three (two preferred) upper case characters that usually signify the project name. The rationale behind this is to avoid name space collisions.
+
+```
+TWNUser     //Good
+User       	//Bad, can cause namespace collisions
+tiUser      //Bad, prefix should be upper case
+NSUser      //Bad, namespace conflict
+ALLUser     //Bad, Suffix is a misnomer and “looks” bad anyway ☺
+TWINITUser  //Bad, too long a prefix
+```
 #Stylistics Aspects
 #General Guidelines
+
+
+Naming
+
+ [^stackedit]Stack
+>  [1]: http://math.stackexchange.com/
