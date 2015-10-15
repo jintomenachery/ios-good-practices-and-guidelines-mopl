@@ -56,11 +56,11 @@ The most important point is to keep these consistent across your project's class
 
 
 ##Naming
-** General Rule of thumb**
+**General Rule of thumb**
 - Avoid abbreviations
 - Avoid underscores
 
-** Rule of thumb for methods and variables **
+**Rule of thumb for methods and variables**
 - [No prefix](#no-prefix-for-methods-and-variables)
 - [Use camel casing](#use-camel-casing)
 
