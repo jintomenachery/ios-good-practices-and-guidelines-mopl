@@ -25,3 +25,8 @@ As a general rule, don't write your date calculations yourself. Luckily, in [Dat
 3. XCode Utility ** TODO **
 4. Haven't you heard about CocoaPods? This is the best way you can manage your dependencies with third party project. How many times have you added somebody's  source code to your project([FacebookSDK](https://github.com/facebook/facebook-ios-sdk) :-/) and multiplied your source code size. And what about updating Facebook SDK later ? All such burdens can be lightened by using CocoaPods. Start using Cocoapods by reading [Introduction to CocoaPods Tutorial](http://www.raywenderlich.com/64546/introduction-to-cocoapods-2).
 5. If you want to ask some clarifications and you are stuck with documenting the lengthy UI flow, you can start using [liceCap](http://www.cockos.com/licecap/). This simple tool can capture an area of your desktop and save it directly to .GIF.
+6. [Xcode Utility](ios-good-practices-and-guidelines-mopl/Resources/Xcode Utility.zip) - By doing below tasks, this small utility will make your life easier,
+- Creating ipa from Xcode archive
+- Symbolicating Crash logs using the crash file and the DYSM file
+- Setting path of developer directory
+As the app is not downloaded from Appstore, you might have to alter the security settings in Settings & Privacy > Allow apps download from: to Anywhere. Kudos to ==Darsan Geevarghese== for coming up with this tool.
