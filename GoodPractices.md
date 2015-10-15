@@ -27,6 +27,7 @@ As a general rule, don't write your date calculations yourself. Luckily, in [Dat
 5. If you want to ask some clarifications and you are stuck with documenting the lengthy UI flow, you can start using [liceCap](http://www.cockos.com/licecap/). This simple tool can capture an area of your desktop and save it directly to .GIF.
 6. [Xcode Utility](https://github.com/jintomenachery/ios-good-practices-and-guidelines-mopl/Resources/branch/Xcode-Utility.zip) - By doing below tasks, this small utility will make your life easier,
   - Creating ipa from Xcode archive
-- Symbolicating Crash logs using the crash file and the DYSM file
-- Setting path of developer directory
-As the app is not downloaded from Appstore, you might have to alter the security settings in Settings & Privacy > Allow apps download from: to Anywhere. Kudos to ==Darsan Geevarghese== for coming up with this tool.
+  - Symbolicating Crash logs using the crash file and the DYSM file
+  - Setting path of developer directory
+	As the app is not downloaded from Appstore, you might have to alter the security settings in Settings & Privacy > Allow apps download from: to Anywhere. Kudos to ==Darsan Geevarghese== for coming up with this tool.
+
