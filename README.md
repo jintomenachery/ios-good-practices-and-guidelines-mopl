@@ -1,6 +1,5 @@
 #iOS Coding Guidelines
 
-[TOC]
 
 ## Influences
 - [WikiMedia coding guidelines](https://www.mediawiki.org/wiki/Wikimedia_Apps/Team/iOS/ObjectiveCStyleGuide#Influences)
