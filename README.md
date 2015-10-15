@@ -275,31 +275,27 @@ typedef NS_ENUM(NSInteger, WMFAdRequestState) {
 ##uncrustify **TODO
 
 ## Check list
-
--- ** Constants **
+**Constants**
 - [ ]  No `#define`
 - [ ]  Use constants
-- [ ]  Try to avoid common header
+- [ ]  Try to avoid dumping constants to a common header
 - [ ]  Never ever use magic numbers
 
--- **Naming**
-- ** General Rule of thumb**
+**Naming**
 - [ ] Avoid abbreviations
 - [ ] Avoid underscores
-- ** Rule of thumb for methods and variables **
-- [ ] [No prefix](#no-prefix-for-methods-and-variables)
-- [ ] [Use camel casing](#use-camel-casing)
+- [ ] [No prefix for variables](#no-prefix-for-methods-and-variables)
+- [ ] [Use camel casing for variabls](#use-camel-casing)
 
--- ** Spacing **
+**Spacing**
 - [ ] Spaces, not tabs.
 - [ ] End files with a newline.
 - [ ] Don’t leave trailing whitespace.
 
-
 ##Version History
-|Version | Date  |Modified By|Reviewed by|
-|--------|--------|-----------|-----------|
-|   0.5  |15-Oct-2015|Jinto Thomas||
+|Version | Date  |Modified By|Reviewed by|Remarks
+|--------|--------|-----------|-----------|-----------|
+|   0.5  |15-Oct-2015|Jinto Thomas||Draft|
 
 ##Credits
 - Darsan Geevarghese
