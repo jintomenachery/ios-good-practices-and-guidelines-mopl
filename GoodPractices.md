@@ -29,5 +29,5 @@ As a general rule, don't write your date calculations yourself. Luckily, in [Dat
   - Creating ipa from Xcode archive
   - Symbolicating Crash logs using the crash file and the DYSM file
   - Setting path of developer directory
-	As the app is not downloaded from Appstore, you might have to alter the security settings in Settings & Privacy > Allow apps download from: to Anywhere. Kudos to ==Darsan Geevarghese== for coming up with this tool.
+As the app is not downloaded from Appstore, you might have to alter the security settings in Settings & Privacy > Allow apps download from: to Anywhere. Kudos to ==Darsan Geevarghese== for coming up with this tool.
 
