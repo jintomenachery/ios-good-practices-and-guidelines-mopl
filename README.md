@@ -1,11 +1,17 @@
 #iOS Coding Guidelines
 
+[TOC]
 
 ## Influences
 - [WikiMedia coding guidelines](https://www.mediawiki.org/wiki/Wikimedia_Apps/Team/iOS/ObjectiveCStyleGuide#Influences)
 
 ##ARC
 ARC should be enabled for all new projects.
+
+##Auto Layout
+- Prefer Auto layout constraints over springs and struts(Masks).
+- Use size classes for different device layouts instead of different XIBs.
+- Modifying frames using code **NOT** recommended(if it not really needed as per business logic)!
 
 ## Structure
 
@@ -241,6 +247,9 @@ Blocks should always be copied when used outside the lexical scope in which they
 `@property (nonatomic, copy) WMFCompletion completion;`
 
 ##Constants
+
+###Defined using const keyword
+
 **Rule of Thumb**
 - No `#define`
 - Use constants
@@ -253,16 +262,19 @@ Constants are preferred over in-line string literals or numbers, as they allow f
 
 For example:
 ```ObjectiveC
-// Good 
-extern NSString* const FooPublicConstant; 					 // Foo.h
+// Good
+extern NSString* const TWNFooPublicConstant; 					 // Foo.h
 
-NSString* const FooPublicConstant = @"Foo"; 				   // Foo.m
-static NSString* const FooPrivateConstant = @"PrivateFoo"; 	// Foo.m
+NSString* const TWNFooPublicConstant = @"Foo"; 				   // Foo.m
+static NSString* const TWNFooPrivateConstant = @"PrivateFoo"; 	// Foo.m
 
 //Really bad
 #define CompanyName @"Wikimedia Foundation"
 ```
-##Enumerated Types
+###Enumerated Constants
+
+Use enumerations for groups of related constants that have integer values.
+
 When using enums, it is recommended to use the new fixed underlying type specification because it has stronger type checking and code completion. The SDK now includes a macro to facilitate and encourage use of fixed underlying types — `NS_ENUM()`
 
 Example:
@@ -272,6 +284,38 @@ typedef NS_ENUM(NSInteger, WMFAdRequestState) {
     WMFAdRequestStateLoading
 };
 ```
+
+##Literal Syntax
+When ever applicable use literal syntax.
+
+```ObjectiveC
+// NSArray syntax
+NSArray *words = @[@"list", @"of", @"words", @123, @3.14]; //// NSArray *words = [NSArray arrayWithObjects:@"list", @"of", @"words", nil];
+```
+Note that it’s not needed to include the ending nil sentinel anymore using the new syntax.
+
+```ObjectiveC
+// NSDictionary syntax
+NSDictionary *d = @{
+  @"key": @"value",
+  @"name": @"Joris",
+  @"n": @1234,
+  @3: @"string"
+};
+```
+As with NSArray no need to include the nil sentinel here either.
+```ObjectiveC
+// Finally NSNumber syntax
+NSNumber *n1 = @1000;  // [NSNumber numberWithInt:1000]
+NSNumber *n2 = @3.1415926; // [NSNumber numberWithDouble:3.1415926]
+NSNumber *c = @'c'; // [NSNumber numberWithChar:'c']
+NSNumber *b = @YES; // [NSNumber numberWithBool:YES]
+
+// uses the usual suffixes for `unsigned` (`u`) and `float` (`f`)
+NSNumber *f = @2.5f;
+NSNumber *nu = @256u;
+```
+
 ##uncrustify **TODO
 
 ## Check list
