@@ -82,7 +82,7 @@ User		//Bad, can cause namespace collisions
 twUser      //Bad, prefix should be upper case
 NSUser      //Bad, namespace conflict
 ALLUser     //Bad, Suffix is a misnomer and “looks” bad anyway ☺
-TWINITUser  //Bad, too long a prefix
+TWINITUser  //Bad, too long for a prefix
 ```
 ###Use camel casing
 ```ObjectiveC
@@ -110,7 +110,6 @@ If you are using the property syntax, the property declation will look like
 ```ObjectiveC
 @property(nonatomic,getter=isValid) BOOL valid;
 ```
-Note the bolded items to see how this relates to the original private variable that this property exposes.
 
 ###Always use keywords to describe parameters.
 
