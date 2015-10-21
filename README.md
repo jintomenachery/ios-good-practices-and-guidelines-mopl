@@ -1,6 +1,9 @@
 #iOS Coding Guidelines
 
-[TOC]
+* auto-gen TOC:
+{:toc}
+
+![](http://)
 
 ## Influences
 - [WikiMedia coding guidelines](https://www.mediawiki.org/wiki/Wikimedia_Apps/Team/iOS/ObjectiveCStyleGuide#Influences)
@@ -12,6 +15,9 @@ ARC should be enabled for all new projects.
 - Prefer Auto layout constraints over springs and struts(Masks).
 - Use size classes for different device layouts instead of different XIBs.
 - Modifying frames using code **NOT** recommended(if it not really needed as per business logic)!
+
+##Asset Catalogs
+Images should be placed in the **Asset catalog** in all new projects.
 
 ## Structure
 
@@ -343,3 +349,4 @@ NSNumber *nu = @256u;
 
 ##Credits
 - Darsan Geevarghese
+- Vipin Thazhissery
